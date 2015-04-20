@@ -1,0 +1,11 @@
+<svg width="64" height="62" viewBox="0 0 64 62" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Oval 54
+    </title>
+    <g transform="translate(8 7)" stroke="#CCC" fill="none" fill-rule="evenodd">
+        <circle cx="24" cy="24" r="24"/>
+        <g stroke-linecap="square">
+            <path d="M15.872 27l8.6 8 8.426-8M15.487 17l8.6 8 8.426-8"/>
+        </g>
+    </g>
+</svg>
