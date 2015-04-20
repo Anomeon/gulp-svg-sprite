@@ -1,7 +1,7 @@
-== README
+README
 
 In project's folder run:
 
 * sudo npm install gulp
 
-* npm install
+* sudo npm install
