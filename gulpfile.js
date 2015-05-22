@@ -31,7 +31,7 @@ gulp.task('svg-store', function() {
 
 gulp.task('svg-rename', function() {
   gulp.src("output/svgo/svgo.svg")
-    .pipe(rename("icons-svg.svg"))
+    .pipe(rename("icons_svg.svg"))
     .pipe(gulp.dest("output"));
 });
 
