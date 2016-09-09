@@ -17,7 +17,8 @@ q or operating system, you probably want to add a global ignore instead:
 /public/uploads
 /tmp
 
-
-/input
-/output
+/input/*
+/output/*
+!/input/.keep
+!/output/.keep
 /node_modules

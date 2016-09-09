@@ -13,28 +13,21 @@ gulp.task('svg-min', function() {
             pretty: true
         }
     }))
-    .pipe(gulp.dest('output/svgo'));
+    .pipe(gulp.dest('output'));
 
 });
 
 gulp.task('svg-store', function() {
-  return gulp.src('output/svgo/*.svg')
+  return gulp.src('output/*.svg')
     .pipe(rename({prefix: 'icon-'}))
     .pipe(svgstore({
         js2svg: {
             pretty: true
         }
     }))
-    .pipe(gulp.dest('output/svgo/'));
+    .pipe(gulp.dest('output'));
 
 });
-
-gulp.task('svg-rename', function() {
-  gulp.src("output/svgo/svgo.svg")
-    .pipe(rename("icons_svg.svg"))
-    .pipe(gulp.dest("output"));
-});
-
 
 gulp.task('watch', function () {
   gulp.watch('input/*.svg', ['default']);
@@ -42,10 +35,10 @@ gulp.task('watch', function () {
 
 gulp.task('clean', function (cb) {
   return del([
-    'output/svgo/*.svg'
+    'output/*.svg'
   ], cb);
 });
 
 gulp.task('default', function (cb){
-  runSequence('clean','svg-min', 'svg-store','svg-rename','watch', cb);
+  runSequence('clean', 'svg-min', 'svg-store', 'watch', cb);
 });
